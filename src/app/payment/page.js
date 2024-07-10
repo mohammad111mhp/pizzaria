@@ -35,7 +35,6 @@ export default function PaymentPage() {
 
     async function successButtonAction(e) {
         e.preventDefault();
-        // address and shopping cart products
 
         const promise = new Promise((resolve, reject) => {
             fetch('/api/payment', {
@@ -75,7 +74,7 @@ export default function PaymentPage() {
                 <Left className="w-4" />
             </Link>
             <div className="grid grid-cols-2 gap-8 shadow-md shadow-gray-300 p-8 my-4 max-md:grid-cols-1">
-                {/* LEFT SIDE */}
+
                 <div className="">
                     <div className="mb-8">
                         <span className="bg-orange-200 text-orange-500 font-bold text-xs px-2 py-1 rounded-lg">تست</span>
@@ -116,7 +115,6 @@ export default function PaymentPage() {
                     </div>
                 </div>
 
-                {/* RIGHT SIDE */}
                 <div className="flex flex-col justify-between">
                     <div>
                         <label>شماره کارت</label>
