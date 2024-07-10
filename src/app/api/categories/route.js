@@ -1,4 +1,4 @@
-import { isAdmin } from "@/app/admin";
+import { isAdmin } from "@/app/options";
 import { Category } from "@/app/models/Category";
 import mongoose from "mongoose";
 
