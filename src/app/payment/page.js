@@ -9,7 +9,7 @@ import Link from "next/link";
 import toast from "react-hot-toast";
 import Toman from "@/components/icons/Toman";
 
-export default function paymentPage() {
+export default function PaymentPage() {
     const { cartProducts } = useContext(CartContext);
     const { data: profileData } = useProfile();
     const [address, setAddress] = useState({});
@@ -35,7 +35,6 @@ export default function paymentPage() {
 
     async function successButtonAction(e) {
         e.preventDefault();
-        // address and shopping cart products
 
         const promise = new Promise((resolve, reject) => {
             fetch('/api/payment', {
@@ -75,7 +74,7 @@ export default function paymentPage() {
                 <Left className="w-4" />
             </Link>
             <div className="grid grid-cols-2 gap-8 shadow-md shadow-gray-300 p-8 my-4 max-md:grid-cols-1">
-                {/* LEFT SIDE */}
+
                 <div className="">
                     <div className="mb-8">
                         <span className="bg-orange-200 text-orange-500 font-bold text-xs px-2 py-1 rounded-lg">تست</span>
@@ -116,7 +115,6 @@ export default function paymentPage() {
                     </div>
                 </div>
 
-                {/* RIGHT SIDE */}
                 <div className="flex flex-col justify-between">
                     <div>
                         <label>شماره کارت</label>
