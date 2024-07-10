@@ -9,7 +9,7 @@ import Link from "next/link";
 import toast from "react-hot-toast";
 import Toman from "@/components/icons/Toman";
 
-export default function paymentPage() {
+export default function PaymentPage() {
     const { cartProducts } = useContext(CartContext);
     const { data: profileData } = useProfile();
     const [address, setAddress] = useState({});
