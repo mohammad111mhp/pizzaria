@@ -40,9 +40,9 @@ export async function POST(req) {
             }
         }
 
-        return Response.json('http://localhost:3000/orders/' + orderDoc._id + '?success=1');
+        return Response.json('https://pizzaria-pearl.vercel.app/orders/' + orderDoc._id + '?success=1');
     } else {
 
-        return Response.json('http://localhost:3000/payment');
+        return Response.json('https://pizzaria-pearl.vercel.app/payment');
     }
 }
