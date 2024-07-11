@@ -63,12 +63,12 @@ export default function OrderPage() {
                             </div>
                             <div className="flex justify-between">
                                 هزینه ارسال:
-                                <span className="text-black font-bold flex">5 <Toman className="w-5 h-5 inline" /></span>
+                                <span className="text-black font-bold flex">20000 <Toman className="w-5 h-5 inline" /></span>
                             </div>
                             <div className="flex justify-between border-t border-gray-200 py-2 mt-2">
                                 مجموع:
                                 <span className="text-black font-bold flex">
-                                    {subtotal + 5} <Toman className="w-5 h-5 inline" />
+                                    {subtotal + 20000} <Toman className="w-5 h-5 inline" />
                                 </span>
                             </div>
                         </div>
